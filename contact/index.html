@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ページ名 | サイト名</title>
+  <meta name="description" content="サイトの説明文">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- スタイルシートはここから -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/queries.css">
+</head>
+
+<body>
+  <header>
+    <div class="container d-none d-lg-block">
+      <div class="text-center mx-auto my-3"><a href="../index.html"><img src="../img/logo.png" alt="Clinic Name"></a></div>
+      <h1 class="text-center h6">東京都〇〇区のSAMPLE歯科クリニックでは、歯の健康を第一に考えた治療を行っています</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand d-inline-block d-lg-none w-75" href="/"><img src="img/logo.png" alt="Clinic Name" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-3"><a href="../index.html#notice" class="nav-link">おしらせ</a></li>
+            <li class="nav-item px-3"><a href="../index.html#list" class="nav-link">診療科目</a></li>
+            <li class="nav-item px-3"><a href="../index.html#message" class="nav-link">院長ごあいさつ</a></li>
+            <li class="nav-item px-3"><a href="../index.html#chara" class="nav-link">当院の特徴</a></li>
+            <li class="nav-item px-3"><a href="../index.html#blog" class="nav-link">院内ブログ</a></li>
+            <li class="nav-item right px-3"><a href="../index.html#access" class="nav-link">アクセス</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid bg-warning mb-5 pt-3">
+    <h2 class="text-center font-weight-bolder pb-3">ご予約・お問い合わせ</h2>
+  </div>
+
+  <article class="container">
+
+    <section class="py-5">
+      <div class="text-center">
+        <img src="../img/teeth.png" alt="Teeth" class="img-fluid img-size">
+      </div>
+      <h3 class="text-center font-weight-bold mb-5" id="net-reservation">ネットからのご予約・お問い合わせ</h3>
+
+      <ul>
+        <li>＊は必須項⽬です</li>
+        <li>ご予約は仮予約となります。こちらからの折り返しのご連絡をもってご予約確定となります</li>
+        <li>混雑している場合はご希望の予約時間が取れない場合があります</li>
+      </ul>
+
+      <form class="border p-3 p-md-5 mb-5">
+
+        <div class="mb-3 row align-items-center">
+          <label for="Subject" class="col-sm-2 col-form-label">ご用件＊</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+              <label class="form-check-label" for="inlineRadio1">ご予約</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+              <label class="form-check-label" for="inlineRadio2">お問い合わせ</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+              <label class="form-check-label" for="inlineRadio3">その他</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="Number" class="col-sm-2 col-form-label">診察券番号</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Number" value="">
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="Name" class="col-sm-2 col-form-label">お名前＊</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Named" placeholder="お名前を入力してください" required>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="Email" class="col-sm-2 col-form-label">Eメール＊</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Email" value="" required>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="Tel" class="col-sm-2 col-form-label">電話番号＊</label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Tel" placeholder="ハイフンなしで入力してください" required>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="Date" class="col-sm-2 col-form-label">希望日＊</label>
+          <div class="col-sm-10">
+            <div class="row align-items-center mb-3">
+              <div class="col">第一希望</div>
+              <div class="col-10"><input type="date" class="form-control d-inline-block" id="Date" value="" required>
+              </div>
+            </div>
+            <div class="row align-items-center mb-3">
+              <div class="col">第二希望</div>
+              <div class="col-10"><input type="date" class="form-control d-inline-block" id="Date" value="">
+              </div>
+            </div>
+            <div class="row align-items-center mb-3">
+              <div class="col">第三希望</div>
+              <div class="col-10"><input type="date" class="form-control d-inline-block" id="Date" value="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 row align-items-center">
+          <label for="Subject" class="col-sm-2 col-form-label">連絡方法＊</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="Radios1" id="exampleRadio1" value="option4" required>
+              <label class="form-check-label" for="exampleRadio1">メール</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="Radios2" id="exampleRadio2" value="option5" required>
+              <label class="form-check-label" for="exampleRadio2">お電話</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 row align-items-center">
+          <label for="Subject" class="col-sm-2 col-form-label">メッセージ</label>
+          <div class="col-sm-10">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="ここにコメントを残す" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">当院にメッセージがある方はこちらにお書きください</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mb-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              利用規約に同意する
+            </label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type=" submit" class="btn btn-primary">フォームを送信</button>
+        </div>
+      </form>
+
+      <div class="mb-5 text-center">
+        <p class="text-left">お問い合わせのメールが正しく送れない場合は、下記のメールアドレスからご連絡ください。<br>メールでのご予約は承っておりませんので、ご予約の⽅はお電話にてお願いいたします。</p>
+      </div>
+
+      <div class="text-center">
+        <a href="mailto:sample@example.com" class="border btn btn-light p-4 fw-bolder col-md-8">
+          sample@example.com へメールを送信<br>
+          <span class="fw-normal">※ メーラーが起動します</span>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="py-5">
+      <div class="text-center">
+        <img src="../img/teeth.png" alt="Teeth" class="img-fluid img-size">
+      </div>
+      <h3 class="text-center font-weight-bold mb-5" id="tel-reservation">お電話からのご予約・お問い合わせ</h3>
+
+      <div class="border p-3 p-md-5 mb-5">
+
+        <h3 class="text-center fw-bold py-5 h1">TEL:090-1234-5678</h3>
+
+        <div class="row border-bottom py-3 h4">
+          <div class="col-md-4">
+            <p>受付時間</p>
+          </div>
+          <hr class="d-block d-md-none">
+          <div class="col-md-4">
+            <p>月・火・木・金</p>
+          </div>
+          <div class="col-md-4">
+            <p>9：00〜13：00&ensp;<br class="d-block d-md-none">14：30〜19：00</p>
+          </div>
+        </div>
+
+        <div class="row border-bottom py-3 h4">
+          <div class="col-md-4 d-none d-md-block">
+          </div>
+          <div class="col-md-4">
+            <p>水</p>
+          </div>
+          <div class="col-md-4">
+            <p>9：00〜13：00</p>
+          </div>
+        </div>
+
+        <div class="row border-bottom py-3 h4">
+          <div class="col-md-4 d-none d-md-block">
+          </div>
+          <div class="col-md-4">
+            <p>土</p>
+          </div>
+          <div class="col-md-4">
+            <p>9：00〜13：00&ensp;<br class="d-block d-md-none">4：30〜17：00</p>
+          </div>
+        </div>
+
+
+
+        <div class="row border-bottom py-3 mb-3 h4">
+          <div class="col-4">
+            <p>休診日</p>
+          </div>
+          <div class="col-8">
+            <p>水曜午後・日祝・GW・年末年始・夏期休暇</p>
+          </div>
+        </div>
+
+        <p>※ GW・年末年始・夏季休暇につきましては、別途ウェブサイトやクリニックにてお知らせいたします。</p>
+
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="d-lg-flex justify-content-between align-items-center">
+        <div class="col-lg-4 text-center mb-3">
+          <img src="../img/logo.png" alt="Clinic Name" class="img-fluid">
+        </div>
+        <div class="col-lg-4 text-center mb-3">
+          <h4>SAMPLE 歯科クリニック</h4>
+          <h4 class="h3">TEL:03-1234-5678</h4>
+          <p class="mb-0">〒000-0000 東京都港区芝8丁目0-0&ensp;<br class="d-block d-md-none">ビジネスビル1F</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <a href="contact/index.html" class="btn btn-secondary rounded-pill w-100 py-3">ネットでのご予約はこちらから</a>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+  <footer class="bg-secondary py-5 position-relative">
+    <nav class="navbar navbar-expand navbar-light px-4">
+      <!--メニュー項目-->
+      <div class="collapse navbar-collapse px-3">
+        <ul class="navbar-nav mx-auto footer">
+          <li class="nav-item px-2 border-after"><a href="../index.html#notice" class="nav-link text-white">おしらせ</a></li>
+          <li class="nav-item px-2 border-after"><a href="../index.html#list" class="nav-link text-white">診療科目</a></li>
+          <li class="nav-item px-2 border-after"><a href="../index.html#message" class="nav-link text-white">院長ごあいさつ</a></li>
+          <li class="nav-item px-2 border-after"><a href="../index.html#chara" class="nav-link text-white">当院の特徴</a></li>
+          <li class="nav-item px-2 border-after"><a href="../index.html#blog" class="nav-link text-white">院内ブログ</a></li>
+          <li class="nav-item right px-2 border-after"><a href="../index.html#access" class="nav-link text-white">アクセス</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-center mt-4">
+      <small class="mb-5 text-white">&copy;2021 SAMPLEクリニック</small>
+    </div>
+
+    <div class="totop">
+      <i class="far fa-arrow-alt-circle-up fa-3x"></i>
+    </div>
+  </footer>
+
+  <div class="floating-nav">
+    <div class="px-3 py-4 bg-secondary">
+      <a class="" href="#net-reservation">ネット予約</a>
+    </div>
+    <div class="px-3 py-4 bg-dark">
+      <a class="" href="#tel-reservation">電話予約</a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
