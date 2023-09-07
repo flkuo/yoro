@@ -76,9 +76,22 @@
     text-align: center;
     background: url(img/walkway.jpg);
     background-size: 80%;
-    margin-bottom: 1em;
-	background-repeat: repeat-x;
-	opacity: 0.5;
+    margin-bottom: 0em;
+	background-repeat: repeat-y;
+	opacity: 0.6;
 	
 }
+
+@media (max-width: 500px){ 
+div.top{
+    position: relative;
+}
+div.normal{
+    margin-top:200px;
+}
+ul.menu li{
+    float: none;
+}}
+
+
 

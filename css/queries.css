@@ -53,8 +53,42 @@
 
 /* 極小デバイス（縦向きモバイル, 576px 未満）
 ============================================== */
-@media (max-width: 575.98px) {
-  footer nav ul.navbar-nav {
-    display: block;
+
+.navbar .icon {
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar.expanded a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.expanded a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.navbar.expanded {
+    height: auto;
+}
+
+function expansion() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " expanded";
+  } else {
+    x.className = "navbar";
   }
 }
+
+
