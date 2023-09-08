@@ -1,23 +1,17 @@
 <?php
 
-if(empty($_POST['submit']))
-{
-	echo "Form is not submitted!";
-	exit;
+
+if ($_SERVER["REQUEST_METHOD"]== "post"){
+$name=$_post["name"];
+$email=$_post["email"];
+$phone=$_phone["phone"];
+$msg=$_post["msg"];
+
+echo "Name: " . $name . "<br>" ;
+echo "Email: " . $email. "<br>" ;
+echo "phone: " . $phone. "<br>" ;
+echo "Msg: " . $msg;
 }
-if(empty($_POST["fullname"]) ||
-	empty($_POST["email"]))
-	{
-		echo "Please fill the form";
-		exit;
-	}
-	
-$name = $_POST["fullname"];
-$email = $_POST["email"];
 
-mail( 'form.fanlink@gmail.com' , 'New form submission' , 
-"New form submission: Name: $name, Email: $email"  );
-
-header('Location: thank_you.html');
 
 ?>
