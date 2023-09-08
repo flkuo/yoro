@@ -15,7 +15,7 @@ if(empty($_POST["fullname"]) ||
 $name = $_POST["fullname"];
 $email = $_POST["email"];
 
-mail( 'form.linkedin@gmail.com' , 'New form submission' , 
+mail( 'form.fanlink@gmail.com' , 'New form submission' , 
 "New form submission: Name: $name, Email: $email"  );
 
 header('Location: thank_you.html');
