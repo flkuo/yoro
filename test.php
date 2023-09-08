@@ -23,7 +23,5 @@ $filePath = "/home/ec2-user/form_data.txt";
 mail( 'form.fanlink@gmail.com' , 'New form submission' , 
 "New form submission: Name: $name, Email: $email"  );
 
-header('Location: thank_you.html');
-
 
 ?>
